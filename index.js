@@ -13,10 +13,6 @@ app.use(express.urlencoded({ extended: true }))
 // Use your route here
 app.use("/api/v1/example", exampleRoute);
 
-app.get('/', (req, res) => {
-  res.json('Okay')
-});
-
 app.listen(
   port,
   () => {
